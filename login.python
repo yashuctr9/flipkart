@@ -1,0 +1,11 @@
+import request
+
+base_url="https://mukesh-api.vercel.app/"
+class wallpaper:
+    def __int__(self):
+      pass
+    def wall (self):
+       url =f"{base_url}wallpaper"
+       return request.get(url).json()["result"]
+H=wall paper()
+print(H.wall())
