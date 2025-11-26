@@ -1,2 +1,11 @@
-n = int(input())
-print("Even" if n % 2 == 0 else "Odd")
+pipeline {
+    agent any
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+    }
+    
+}
